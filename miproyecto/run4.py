@@ -12,36 +12,29 @@
 	carrera del estudiante.
 """
 
-# declaración de variables
-valPromCiclo = 1200
-valPromCiclo = int(valPromCiclo)
+# valor promedio de cada ciclo == valPromCiclo <- 1200
+valPromCiclo = int(1200)
 
 # recolección de los datos del estudiante: edad y modalidad
 print("_____Datos del estudiante_____")
 modalidad = input("Modalidad en que se encuentra: ")
-edad = input("Edad: ")
-edad = int(edad)
+edad = int(input("Edad: "))
 
-# uso de condicionales
-
+# uso de condicionales para asignar costo y ciclos
 # costo para edad
 if edad <= 20:
-	valPromSeg = 100
-	valPromSeg = int(valPromSeg)
+	valPromSeg = int(100)
 else:
-	valPromSeg = 150
-	valPromSeg = int(valPromSeg)
+	valPromSeg = int(150)
 
 # número de ciclos según modalidad
 if modalidad == "Distancia":
-	nCiclos = 10
-	nCiclos = int(nCiclos)
+	nCiclos = int(10)
 else:
-	nCiclos = 8
-	nCiclos = int(nCiclos)
+	nCiclos = int(8)
 
 # cálculo del costo
-total = ((valPromCiclo*nCiclos)+(valPromSeg*nCiclos))
+total = float((valPromCiclo*nCiclos)+(valPromSeg*nCiclos))
 
 # salida
-print("%s = %d" % ("Costo total de la carrera universitaria", int(total)))
+print("%s = %.2f" % ("Costo total de la carrera universitaria", total))
