@@ -37,4 +37,4 @@ else:
 total = float((valPromCiclo*nCiclos)+(valPromSeg*nCiclos))
 
 # salida
-print("%s = %.2f" % ("Costo total de la carrera universitaria", total))
+print("%s = $%.2f" % ("Costo total de la carrera universitaria", total))
